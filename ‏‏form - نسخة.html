@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="form.css">-->
+
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        body{
+            background-color: #f1f1f1;
+            padding: 40px 0px;
+        }
+        
+        .form-box{
+            margin: auto;
+            max-width: 500px;
+            min-height: 550px;
+            background-color: white;
+        }
+        .form-box .contact {
+            width: 100%;
+            min-height: 80px;
+            background-color: rgb(95, 94, 94);
+            text-align: center;
+            padding: 5px 0px;
+        }
+        h1{
+            padding-top: 5px;
+            font-size: 25px;
+            color: rgb(255, 255, 255);
+        }
+        
+        .input-box{
+            text-align: center;
+            padding: 0px 20px;
+            
+        }
+        input {
+            border: #dddddd 1px solid;
+            border-radius: 4px;
+            padding: 4px;
+            display: inline-block;
+            width: 99%;
+            font-size: 18px;
+        }
+        label{
+            display:flex;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            margin-top: 10px;
+            padding: 10px 0px;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        
+        select {
+            padding: 4.5px;
+            width: 100%;
+            font-size: 19px;
+        }
+        
+        textarea {
+            width: 100%;
+          max-width: 100%;
+          font-size: 16px;
+        }
+        
+        .submit{
+            padding: 10px;
+            margin: 15px 0px;
+            color: white;
+            background-color: rgb(95, 94, 94);
+        }
+        .submit:hover{
+            background-color: rgb(66, 66, 66);
+        }
+        
+    </style>
+    <div class="form-box">
+        <div class="contact">
+            <h1 style="padding: 5px; color: rgb(255, 255, 255);">دليلك في الويب لاضافة موقعك</h1>
+            <h2 style="text-align: center; color:rgb(255, 255, 255); font-size:19px">المرجو ملئ هذه البيانات بكل دقة وشفافية</h2>
+            <h3 style="text-align: center; color:rgb(255, 255, 255); font-size:16px">يجب ان تكون قد قرأت وفهمت والتزمت بشروط الاستخدام لهذا الموقع</h3>
+        </div>
+        
+        <form action="javascript:cliked()">
+            
+
+
+            <div dir="rtl" class="input-box"> 
+
+                <label  for="locationNmae"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                    <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                  </svg> اسم الموقع</div></label>
+                <input required type="text" name="locationNmae" id="locationNmae" placeholder="اسم الموقع">
+
+                <label  for="locationURL"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                    <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                    <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                  </svg> رابط الموقع</div> </label>
+                <input required type="url" name="locationURL" id="locationURL" placeholder="رابط الموقع">
+
+                <label  for="locationICO"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">
+                    <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                    <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z"/>
+                  </svg> رابط ايقونة الموقع</div> </label>
+                <input required type="url" name="locationICO" id="locationICO" placeholder="رابط الموقع">
+
+                
+                <label  for="locationOwner"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                  </svg> مالك الموقع</div></label>
+                <input required type="text" name="locationOwner" id="locationOwner" placeholder="مالك الموقع">
+
+                <label  for="email"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                  </svg> البريد الالكتروني</div></label>
+                <input required type="email" name="email" id="email" placeholder="البريد الالكتروني">
+
+
+                <label  for="locationDesc"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
+                    <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                    <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                    <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                  </svg> وصف الموقع</div></label>
+                <textarea required name="locationDesc" id="locationDesc"  rows="5" cols="20"></textarea>
+            
+
+                <label  for="locationDesc2"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-journal-richtext" viewBox="0 0 16 16">
+                    <path d="M7.5 3.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm-.861 1.542 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047L11 4.75V7a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 7v-.5s1.54-1.274 1.639-1.208zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+                    <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                    <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                  </svg> مقال عن الموقع</div></label>
+                <textarea required name="locationDesc2" id="locationDesc2"  rows="5" cols="20"></textarea>
+            
+
+
+                <label for="wordKey"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                    <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"/>
+                    <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                  </svg> الكلمات المفتاحية</div></label>
+                <input required type="text" name="wordKey" id="wordKey" class="name" placeholder="الكلمات المفتاحية">
+
+
+                <label for="lang"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+                    <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+                    <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+                  </svg> اللغة</div></label>
+                <input required type="text" name="lang" id="lang" class="name" placeholder="اللغة">
+
+
+                <label for="city"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-flag" viewBox="0 0 16 16">
+                    <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z"/>
+                  </svg> الدولة</div></label>
+                <input required type="text" name="city" id="city" class="name" placeholder="الدولة">
+                
+                
+                <label  for="specialty"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-boxes" viewBox="0 0 16 16">
+                    <path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"/>
+                  </svg> تخصص الموقع</div></label>
+                <select name="specialty" form="carform" id="specialty">
+                <option value="مواقع اسلامية">مواقع اسلامية</option>
+                <option value="مواقع ادبية">مواقع ادبية</option>
+                <option value="مواقع تعليمية">مواقع تعليمية</option>
+                <option value="مواقع تربوية">مواقع تربوية</option>
+                <option value="مواقع اخبارية">مواقع اخبارية</option>
+                <option value="مواقع حكومية">مواقع حكومية</option>
+                <option value="مواقع تقنية">مواقع تقنية</option>
+                <option value="مواقع الالعاب">مواقع الالعاب</option>
+                </select>
+                <p id="success" style="color:  green; font-size:22px; display:none;">تم الارسال وسيتم اضافة موقعك بعد المراجعة والتفعيل</p>
+                <input id="submit" class="submit" type="submit" value="ارسال">
+                <input class="submit" type="button" onclick="saveDynamicDataToFile()" value="حفظ البيانات">
+            </div>
+        </form>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+
+    <script type="text/javascript">
+        
+		function saveDynamicDataToFile() {
+            let locationNmae = document.getElementById("locationNmae").value;
+            let locationURL = document.getElementById("locationURL").value;
+            let locationICO = document.getElementById("locationICO").value;
+            let locationOwner =document.getElementById("locationOwner").value;
+            let email = document.getElementById("email").value;
+            let locationDesc = document.getElementById("locationDesc").value;
+            let locationDesc2 = document.getElementById("locationDesc2").value;
+            let wordKey =document.getElementById("wordKey").value;
+            let lang = document.getElementById("lang").value;
+            let city =document.getElementById("city").value;
+            let specialty =document.getElementById("specialty").value;
+            let bodyALL = "الموقع: " + locationNmae + "\nرابط الموقع: " + locationURL +"\nرابط ايقونة الموقع: " + locationICO + "\nمالك الموقع: " + locationOwner + "\nالبريد الالكتروني: " + email + "\nوصف الموقع: " + locationDesc + "\nمقال عن الموقع: " + locationDesc2 + "\nالكلمات المفتاحية: " + wordKey + "\nاللغة: " + lang + "\nالدولة: " + city + "\nتخصص الموقع: " + specialty;
+            const userInput = `
+            <div style="background-color: #3f3f3f; width:100%; height:100%; padding:30px 0px">
+            
+                        <div class="form-box" style="margin: auto; max-width: 500px; min-height: 550px; background-color: white;">
+                            <div class="contact" style="width: 100%; min-height: 80px; background-color: rgb(95, 94, 94); text-align: center; padding: 5px 0px;">
+                                <h1 style="padding-top: 5px; font-size: 25px; color: rgb(255, 255, 255);">اضافة موقعك</h1>
+                                <p style="font-size: 20px; padding: 5px; color: rgb(255, 255, 255);">الرجاء ملئ الحقول التالية</p>
+                            </div>
+                            <h2 style="text-align: center; color:rgb(88, 76, 76);">دليلك في الويب لاضافة موقعك</h2>
+                            <form action="javascript:cliked()">
+                                
+
+
+                                <div dir="rtl" class="input-box" style="text-align: center; padding: 0px 20px; border: #dddddd 1px solid; border-radius: 4px; padding: 4px; display: inline-block; width: 99%; font-size: 18px;"> 
+
+                                    <label style="display:flex; flex-direction: column-reverse; align-items: flex-start; margin-top: 10px; padding: 10px 0px; font-weight: 600; font-size: 18px;"  for="locationNmae"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                                        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                                    </svg> اسم الموقع</div></label>
+                                    <input style="border: #dddddd 1px solid; border-radius: 4px; padding: 4px; display: inline-block; width: 99%; font-size: 18px;" value="${locationNmae}" disabled required type="text"  name="locationNmae" id="locationNmae" placeholder="اسم الموقع">
+
+                                    <label style="display:flex; flex-direction: column-reverse; align-items: flex-start; margin-top: 10px; padding: 10px 0px; font-weight: 600; font-size: 18px;"  for="locationURL"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                                    </svg> رابط الموقع</div> </label>
+                                    <input style="border: #dddddd 1px solid; border-radius: 4px; padding: 4px; display: inline-block; width: 99%; font-size: 18px;" value="${locationURL}" disabled required type="url" name="locationURL" id="locationURL" placeholder="رابط الموقع">
+
+                                    
+                                    <label style="display:flex; flex-direction: column-reverse; align-items: flex-start; margin-top: 10px; padding: 10px 0px; font-weight: 600; font-size: 18px;"  for="locationOwner"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                                    </svg> مالك الموقع</div></label>
+                                    <input style="border: #dddddd 1px solid; border-radius: 4px; padding: 4px; display: inline-block; width: 99%; font-size: 18px;" value="${locationOwner}" disabled required type="text" name="locationOwner" id="locationOwner" placeholder="مالك الموقع">
+
+                                    <label style="display:flex; flex-direction: column-reverse; align-items: flex-start; margin-top: 10px; padding: 10px 0px; font-weight: 600; font-size: 18px;"  for="email"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                                    </svg> البريد الالكتروني</div></label>
+                                    <input style="border: #dddddd 1px solid; border-radius: 4px; padding: 4px; display: inline-block; width: 99%; font-size: 18px;" value="${email}" disabled required type="email" name="email" id="email" placeholder="البريد الالكتروني">
+
+
+                                    <label style="display:flex; flex-direction: column-reverse; align-items: flex-start; margin-top: 10px; padding: 10px 0px; font-weight: 600; font-size: 18px;" for="locationDesc"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
+                                        <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                                        <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                                        <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                                    </svg> وصف الموقع</div></label>
+                                    <textarea style="width: 100%; max-width: 100%; font-size: 16px;" disabled required name="locationDesc" id="locationDesc"  rows="10" cols="20">${locationDesc}</textarea>
+                                
+
+                                    <label style="display:flex; flex-direction: column-reverse; align-items: flex-start; margin-top: 10px; padding: 10px 0px; font-weight: 600; font-size: 18px;"  for="locationDesc2"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-journal-richtext" viewBox="0 0 16 16">
+                                        <path d="M7.5 3.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm-.861 1.542 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047L11 4.75V7a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 7v-.5s1.54-1.274 1.639-1.208zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+                                        <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                                        <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                                    </svg> مقال عن الموقع</div></label>
+                                    <textarea style="width: 100%; max-width: 100%; font-size: 16px;" disabled required name="locationDesc2" id="locationDesc2"  rows="10" cols="20">${locationDesc2}</textarea>
+                                
+
+
+                                    <label style="display:flex; flex-direction: column-reverse; align-items: flex-start; margin-top: 10px; padding: 10px 0px; font-weight: 600; font-size: 18px;" for="wordKey"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                                        <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"/>
+                                        <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                    </svg> الكلمات المفتاحية</div></label>
+                                    <input style="border: #dddddd 1px solid; border-radius: 4px; padding: 4px; display: inline-block; width: 99%; font-size: 18px;" value="${wordKey}" disabled required type="text" name="wordKey" id="wordKey" class="name" placeholder="الكلمات المفتاحية">
+
+
+                                    <label style="display:flex; flex-direction: column-reverse; align-items: flex-start; margin-top: 10px; padding: 10px 0px; font-weight: 600; font-size: 18px;" for="lang"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+                                        <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+                                        <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+                                    </svg> اللغة</div></label>
+                                    <input style="border: #dddddd 1px solid; border-radius: 4px; padding: 4px; display: inline-block; width: 99%; font-size: 18px;" value="${lang}" disabled required type="text" name="lang" id="lang" class="name" placeholder="اللغة">
+
+
+                                    <label style="display:flex; flex-direction: column-reverse; align-items: flex-start; margin-top: 10px; padding: 10px 0px; font-weight: 600; font-size: 18px;" for="city"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-flag" viewBox="0 0 16 16">
+                                        <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z"/>
+                                    </svg> الدولة</div></label>
+                                    <input style="border: #dddddd 1px solid; border-radius: 4px; padding: 4px; display: inline-block; width: 99%; font-size: 18px;" value="${city}" disabled required type="text" name="city" id="city" class="name" placeholder="الدولة">
+                                    
+                                    
+                                    <label style="display:flex; flex-direction: column-reverse; align-items: flex-start; margin-top: 10px; padding: 10px 0px; font-weight: 600; font-size: 18px;" for="specialty"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-boxes" viewBox="0 0 16 16">
+                                        <path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"/>
+                                    </svg> تخصص الموقع</div></label>
+                                    <select style="padding: 4.5px; width: 100%; font-size: 19px;" disabled  name="specialty" form="carform" id="specialty">
+                                    <option  value="${specialty}">${specialty}</option>
+                                    </select>
+
+                                </div>
+                            </form>
+
+                        </div>
+                    
+                    </div>
+`;
+        var blob = new Blob([bodyALL], { type: "text/plain;charset=utf-8" });
+        saveAs(blob, "data.txt");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        var loman = "1ef6b59df1a0ea38be96bad2f8e741abb3181ade183a7ea6479c0a6dc1a0d378";
+        var control = "6268890F-9B58-484C-8CDC-34F9C6A9";
+        var save = "6268890F-9B58-48";
+        
+        var ciphertextWA = CryptoJS.enc.Hex.parse(loman);
+        var keyWA = CryptoJS.enc.Utf8.parse(control);
+        var ivWA = CryptoJS.enc.Utf8.parse(save);
+        var ciphertextCP = { ciphertext: ciphertextWA };
+        
+        var selod = CryptoJS.AES.decrypt(
+            ciphertextCP,
+            keyWA, 
+            { iv: ivWA }
+        );
+        
+
+        function enabled(){
+            document.getElementById("submit").style.display = 'block';
+            document.getElementById("success").style.display = "block";
+        }
+        
+        function cliked(){
+            document.getElementById("submit").style.display = 'none';
+            let locationNmae = document.getElementById("locationNmae").value;
+            let locationURL = document.getElementById("locationURL").value;
+            let locationICO = document.getElementById("locationICO").value;
+            let locationOwner =document.getElementById("locationOwner").value;
+            let email = document.getElementById("email").value;
+            let locationDesc = document.getElementById("locationDesc").value;
+            let locationDesc2 = document.getElementById("locationDesc2").value;
+            let wordKey =document.getElementById("wordKey").value;
+            let lang = document.getElementById("lang").value;
+            let city =document.getElementById("city").value;
+            let specialty =document.getElementById("specialty").value;
+            let bodyALL = "الموقع: " + locationNmae + "\nرابط الموقع: " + locationURL + "\nمالك الموقع: " + locationOwner + "\nالبريد الالكتروني: " + email + "\nوصف الموقع: " + locationDesc + "\nمقال عن الموقع: " + locationDesc2 + "\nالكلمات المفتاحية: " + wordKey + "\nاللغة: " + lang + "\nالدولة: " + city + "\nتخصص الموقع: " + specialty;
+
+            const htmlString = `
+            <div style="background-color: #3f3f3f; width:100%; height:100%; padding:30px 0px">
+            
+                        <div class="form-box" style="margin: auto; max-width: 500px; min-height: 550px; background-color: white;">
+                            <div class="contact" style="width: 100%; min-height: 80px; background-color: rgb(95, 94, 94); text-align: center; padding: 5px 0px;">
+                                <h1 style="padding-top: 5px; font-size: 25px; color: rgb(255, 255, 255);">اضافة موقعك</h1>
+                                <p style="font-size: 20px; padding: 5px; color: rgb(255, 255, 255);">الرجاء ملئ الحقول التالية</p>
+                            </div>
+                            <h2 style="text-align: center; color:rgb(88, 76, 76);">دليلك في الويب لاضافة موقعك</h2>
+                            <form action="javascript:cliked()">
+                                
+
+
+                                <div dir="rtl" class="input-box" style="text-align: center; padding: 0px 20px; border: #dddddd 1px solid; border-radius: 4px; padding: 4px; display: inline-block; width: 99%; font-size: 18px;"> 
+
+                                    <label style="display:flex; flex-direction: column-reverse; align-items: flex-start; margin-top: 10px; padding: 10px 0px; font-weight: 600; font-size: 18px;"  for="locationNmae"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                                        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                                    </svg> اسم الموقع</div></label>
+                                    <input style="border: #dddddd 1px solid; border-radius: 4px; padding: 4px; display: inline-block; width: 99%; font-size: 18px;" value="${locationNmae}" disabled required type="text"  name="locationNmae" id="locationNmae" placeholder="اسم الموقع">
+
+                                    <label style="display:flex; flex-direction: column-reverse; align-items: flex-start; margin-top: 10px; padding: 10px 0px; font-weight: 600; font-size: 18px;"  for="locationURL"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                                    </svg> رابط الموقع</div> </label>
+                                    <input style="border: #dddddd 1px solid; border-radius: 4px; padding: 4px; display: inline-block; width: 99%; font-size: 18px;" value="${locationURL}" disabled required type="url" name="locationURL" id="locationURL" placeholder="رابط الموقع">
+
+                                    <label style="display:flex; flex-direction: column-reverse; align-items: flex-start; margin-top: 10px; padding: 10px 0px; font-weight: 600; font-size: 18px;"  for="locationICO"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                                      </svg>رابط ايقونة الموقع</div> </label>
+                                    <input style="border: #dddddd 1px solid; border-radius: 4px; padding: 4px; display: inline-block; width: 99%; font-size: 18px;" disabled value="${locationICO}" required type="url" name="locationICO" id="locationICO" placeholder="رابط الموقع">
+                    
+                                    
+                                    <label style="display:flex; flex-direction: column-reverse; align-items: flex-start; margin-top: 10px; padding: 10px 0px; font-weight: 600; font-size: 18px;"  for="locationOwner"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                                    </svg> مالك الموقع</div></label>
+                                    <input style="border: #dddddd 1px solid; border-radius: 4px; padding: 4px; display: inline-block; width: 99%; font-size: 18px;" value="${locationOwner}" disabled required type="text" name="locationOwner" id="locationOwner" placeholder="مالك الموقع">
+
+                                    <label style="display:flex; flex-direction: column-reverse; align-items: flex-start; margin-top: 10px; padding: 10px 0px; font-weight: 600; font-size: 18px;"  for="email"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                                    </svg> البريد الالكتروني</div></label>
+                                    <input style="border: #dddddd 1px solid; border-radius: 4px; padding: 4px; display: inline-block; width: 99%; font-size: 18px;" value="${email}" disabled required type="email" name="email" id="email" placeholder="البريد الالكتروني">
+
+
+                                    <label style="display:flex; flex-direction: column-reverse; align-items: flex-start; margin-top: 10px; padding: 10px 0px; font-weight: 600; font-size: 18px;" for="locationDesc"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
+                                        <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                                        <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                                        <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                                    </svg> وصف الموقع</div></label>
+                                    <textarea style="width: 100%; max-width: 100%; font-size: 16px;" disabled required name="locationDesc" id="locationDesc"  rows="10" cols="20">${locationDesc}</textarea>
+                                
+
+                                    <label style="display:flex; flex-direction: column-reverse; align-items: flex-start; margin-top: 10px; padding: 10px 0px; font-weight: 600; font-size: 18px;"  for="locationDesc2"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-journal-richtext" viewBox="0 0 16 16">
+                                        <path d="M7.5 3.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm-.861 1.542 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047L11 4.75V7a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 7v-.5s1.54-1.274 1.639-1.208zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+                                        <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                                        <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                                    </svg> مقال عن الموقع</div></label>
+                                    <textarea style="width: 100%; max-width: 100%; font-size: 16px;" disabled required name="locationDesc2" id="locationDesc2"  rows="10" cols="20">${locationDesc2}</textarea>
+                                
+
+
+                                    <label style="display:flex; flex-direction: column-reverse; align-items: flex-start; margin-top: 10px; padding: 10px 0px; font-weight: 600; font-size: 18px;" for="wordKey"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                                        <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"/>
+                                        <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                    </svg> الكلمات المفتاحية</div></label>
+                                    <input style="border: #dddddd 1px solid; border-radius: 4px; padding: 4px; display: inline-block; width: 99%; font-size: 18px;" value="${wordKey}" disabled required type="text" name="wordKey" id="wordKey" class="name" placeholder="الكلمات المفتاحية">
+
+
+                                    <label style="display:flex; flex-direction: column-reverse; align-items: flex-start; margin-top: 10px; padding: 10px 0px; font-weight: 600; font-size: 18px;" for="lang"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+                                        <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+                                        <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+                                    </svg> اللغة</div></label>
+                                    <input style="border: #dddddd 1px solid; border-radius: 4px; padding: 4px; display: inline-block; width: 99%; font-size: 18px;" value="${lang}" disabled required type="text" name="lang" id="lang" class="name" placeholder="اللغة">
+
+
+                                    <label style="display:flex; flex-direction: column-reverse; align-items: flex-start; margin-top: 10px; padding: 10px 0px; font-weight: 600; font-size: 18px;" for="city"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-flag" viewBox="0 0 16 16">
+                                        <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z"/>
+                                    </svg> الدولة</div></label>
+                                    <input style="border: #dddddd 1px solid; border-radius: 4px; padding: 4px; display: inline-block; width: 99%; font-size: 18px;" value="${city}" disabled required type="text" name="city" id="city" class="name" placeholder="الدولة">
+                                    
+                                    
+                                    <label style="display:flex; flex-direction: column-reverse; align-items: flex-start; margin-top: 10px; padding: 10px 0px; font-weight: 600; font-size: 18px;" for="specialty"><div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-boxes" viewBox="0 0 16 16">
+                                        <path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"/>
+                                    </svg> تخصص الموقع</div></label>
+                                    <select style="padding: 4.5px; width: 100%; font-size: 19px;" disabled  name="specialty" form="carform" id="specialty">
+                                    <option  value="${specialty}">${specialty}</option>
+                                    </select>
+
+                                </div>
+                            </form>
+
+                        </div>
+                    
+                    </div>
+`;
+
+
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "milafatocom@gmail.com",
+                Password : selod.toString(CryptoJS.enc.Utf8),
+                To : 'milafaty@outlook.com',
+                From : "milafatocom@gmail.com",
+                Subject : "contact",
+                Body : htmlString
+            }).then(
+              message => enabled()
+            );
+        };
+
+    </script>
+</body>
+</html>

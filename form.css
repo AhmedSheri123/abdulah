@@ -1,0 +1,72 @@
+body{
+    background-color: #f1f1f1;
+    padding: 40px 0px;
+}
+
+.form-box{
+    margin: auto;
+    max-width: 500px;
+    min-height: 550px;
+    background-color: white;
+}
+.form-box .contact {
+    width: 100%;
+    min-height: 80px;
+    background-color: rgb(95, 94, 94);
+    text-align: center;
+    padding: 5px 0px;
+}
+.form-box .contact p {
+    padding: 5px;
+    color: rgb(255, 255, 255);
+}
+h1{
+    padding-top: 5px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.input-box{
+    text-align: center;
+    padding: 0px 20px;
+    
+}
+input {
+    border: #dddddd 1px solid;
+    border-radius: 4px;
+    padding: 4px;
+    display: inline-block;
+    width: 99%;
+    font-size: 18px;
+}
+label{
+    display:flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin-top: 10px;
+    padding: 10px 0px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+select {
+    padding: 4.5px;
+    width: 100%;
+    font-size: 19px;
+}
+
+textarea {
+    width: 100%;
+  max-width: 100%;
+  font-size: 16px;
+}
+
+.submit{
+    padding: 10px;
+    margin: 15px 0px;
+    color: white;
+    background-color: rgb(95, 94, 94);
+}
+.submit:hover{
+    background-color: rgb(66, 66, 66);
+}
